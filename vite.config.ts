@@ -4,5 +4,6 @@ import viteSvgr from 'vite-plugin-svgr'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/portfolio-v1/',
   plugins: [viteSvgr(), react()],
 })
