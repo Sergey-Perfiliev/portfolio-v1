@@ -2,7 +2,15 @@
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
-		extend: {},
+		minHeight: {
+			85: '85vh',
+		},
+		extend: {
+			spacing: {
+				'minus-155': '-155px',
+				'minus-80': '-80px',
+			},
+		},
 	},
 	plugins: [],
 	darkMode: 'class',

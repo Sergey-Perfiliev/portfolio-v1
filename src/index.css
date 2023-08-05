@@ -12,3 +12,40 @@ body {
 * {
 	box-sizing: border-box;
 }
+
+.linear-wipe {
+	text-align: center;
+
+	background-color: rgb(20 184 166);
+	background: linear-gradient(
+		to right,
+		rgb(20 184 166) 0% 50%,
+		white 75% 80%,
+		rgb(20 184 166) 100%
+	);
+	background-size: 200% auto;
+
+	color: black;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+	to {
+		background-position: 200% center;
+	}
+}
+
+@layer components {
+	.selection-text-light {
+		@apply selection:text-gray-500 selection:bg-gray-100 dark:selection:text-gray-600 dark:selection:bg-opacity-60;
+	}
+
+	.selection-text {
+		@apply selection:text-teal-500 selection:bg-teal-100 dark:selection:text-teal-100 dark:selection:bg-teal-500;
+	}
+}
