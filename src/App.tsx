@@ -22,8 +22,8 @@ function App() {
 	return (
 		<div className={theme === 'dark' ? 'dark' : 'light'}>
 			<div className='overflow-hidden'>
-				<section className='min-h-85 flex flex-col md:min-h-screen bg-teal-100 dark:bg-gray-700'>
-					<div className='p-14 lg:px-28'>
+				<section className='min-h-[80vh] flex flex-col bg-teal-100 dark:bg-gray-700'>
+					<div className='p-[2rem] lg:px-28'>
 						<header className='pb-8'>
 							<nav className='flex justify-between'>
 								<h1 className='select-none text-3xl dark:text-white linear-wipe xl:text-4xl'>
@@ -53,7 +53,7 @@ function App() {
 							<div>
 								<div className='text-center md:px-6 relative z-10'>
 									<h2 className='selection-text text-4xl text-teal-500 font-medium md:text-5xl md: py-2'>
-										Сергей Перфильев
+										Перфильев Сергей
 									</h2>
 									<h3 className='selection-text text-3xl py-1 md:text-3xl dark:text-white'>
 										Frontend разработчик
@@ -94,29 +94,34 @@ function App() {
 										</a>
 									</div>
 								</div>
-								<PhotoSvg className='hidden lg:block select-none fill-teal-400 absolute right-minus-155 top-minus-80 z-0' />
+								<PhotoSvg className='hidden lg:block select-none fill-teal-400 absolute right-[-155px] top-[-80px] z-0' />
 							</div>
 						</div>
 					</div>
 				</section>
 
 				<main className='dark:bg-slate-600'>
-					<div className='p-14 lg:px-28'>
+					<div className='p-[2rem] lg:px-28'>
 						<div>
 							<h3 className='selection-text text-4xl py-1 dark:text-white lg:mb-8'>
 								Portfolio
 							</h3>
 						</div>
-						<div className='lg:grid lg:grid-cols-2 lg:gap-20 xl:grid-cols-3 xl:gap-10 2xl:gap-40'>
+						<div className='md:grid md:grid-cols-2 md:gap-10 lg:gap-20 xl:grid-cols-3 xl:gap-15 2xl:gap-20'>
 							<div className='text-center shadow-lg p-10 rounded-xl my-10 bg-green-300 lg:my-0'>
 								<div className='flex flex-row items-center justify-center mb-4'>
 									<img
 										src={SmartPoselok}
-										className='select-none bg-white rounded-full p-6 aspect-square overflow-visible w-32 object-cover mr-4'
+										className='select-none bg-white rounded-full p-4 md:p-6 aspect-square overflow-visible w-24 md:w-32 object-cover mr-4'
 									/>
-									<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
-										Smart Poselok
-									</h3>
+									<div>
+										<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
+											Smart Poselok
+										</h3>
+										<button className='w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
+											View
+										</button>
+									</div>
 								</div>
 								<div>
 									<p className='selection-text-light text-gray-700 text-lg py-2'>
@@ -136,11 +141,16 @@ function App() {
 								<div className='flex flex-row items-center justify-center mb-4'>
 									<img
 										src={PathFinding}
-										className='select-none bg-white rounded-full p-10 aspect-square overflow-visible w-32 object-cover mr-4'
+										className='select-none bg-white rounded-full p-8 md:p-10 aspect-square overflow-visible w-24 md:w-32 object-cover mr-4'
 									/>
-									<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
-										Path finding
-									</h3>
+									<div>
+										<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
+											Path finding
+										</h3>
+										<button className='w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
+											View
+										</button>
+									</div>
 								</div>
 								<div>
 									<p className='selection-text-light text-gray-700 text-lg py-2'>
@@ -160,19 +170,22 @@ function App() {
 								<div className='flex flex-row items-center justify-center mb-4'>
 									<img
 										src={FinanceAccounting}
-										className='select-none bg-white rounded-full p-10 aspect-square overflow-visible w-32 object-cover mr-4'
+										className='select-none bg-white rounded-full p-8 md:p-12 aspect-square overflow-visible w-24 md:w-32 object-cover mr-4'
 									/>
-									<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
-										Finance accounting
-									</h3>
+									<div>
+										<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
+											Finance accounting
+										</h3>
+										<button className='w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
+											View
+										</button>
+									</div>
 								</div>
 								<div>
 									<p className='selection-text-light text-gray-700 text-lg py-2'>
 										Web-приложение для того, чтобы сделать управление капиталом
 										доступным и простым для каждого. Отслеживайте свои расходы,
-										чтобы улучшить свое финансовое положение. Составьте
-										реалистичный месячный бюджет. Увеличивайте свои сбережения,
-										даже если на это потребуется время.{' '}
+										чтобы улучшить свое финансовое положение.
 									</p>
 									<h4 className='selection-text-light font-medium text-gray-700 text-lg'>
 										Рарзрабатывается с помощью:
