@@ -118,9 +118,12 @@ function App() {
 										<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
 											Smart Poselok
 										</h3>
-										<button className='w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
+										<a
+											href='https://github.com/Sergey-Perfiliev/smart-poselok'
+											target='_blank'
+											className='block w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
 											View
-										</button>
+										</a>
 									</div>
 								</div>
 								<div>
@@ -147,9 +150,12 @@ function App() {
 										<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
 											Path finding
 										</h3>
-										<button className='w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
+										<a
+											href='https://github.com/Sergey-Perfiliev/path-finding'
+											target='_blank'
+											className='block w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
 											View
-										</button>
+										</a>
 									</div>
 								</div>
 								<div>
@@ -174,11 +180,14 @@ function App() {
 									/>
 									<div>
 										<h3 className='selection-text-light text-gray-700 text-2xl font-medium pb-2'>
-											Finance accounting
+											Finance Flow
 										</h3>
-										<button className='w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
+										<a
+											href='https://github.com/Sergey-Perfiliev/finance-flow'
+											target='_blank'
+											className='block w-full max-w-[12rem] shrink-0 py-1 rounded-md bg-slate-100'>
 											View
-										</button>
+										</a>
 									</div>
 								</div>
 								<div>
